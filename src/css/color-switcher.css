@@ -1,0 +1,16 @@
+button {
+    height: 50px;
+    width: 120px;
+    text-transform: uppercase;
+    margin-top: 200px;
+}
+
+button:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+}

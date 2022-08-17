@@ -1,0 +1,38 @@
+.timer {
+    display: flex;
+    margin: -15px;
+    margin-top: 10px;
+ 
+}
+
+.field {
+    height: 120px;
+    width: 100px;
+    color: black;
+    margin: 15px;
+    text-align: center;
+
+}
+
+.value {
+    font-size: 60px;
+
+}
+
+.label {
+    font-size: large;
+
+}
+
+input {
+    margin-left: 15px;
+    height: 40px;
+    width: 350px;
+    font-size: large;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    font-size: large;
+}
