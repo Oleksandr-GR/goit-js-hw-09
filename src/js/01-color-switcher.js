@@ -5,10 +5,9 @@ let onStartClick = null;
 stopBtn.disabled = true;
 
 stopBtn.addEventListener('click', () => {
-    startBtn.disabled = false;
-    stopBtn.disabled = true;
     clearInterval(onStartClisk);
-    
+    startBtn.disabled = false;
+    stopBtn.disabled = true;   
 });
 
 startBtn.addEventListener('click', () => {
