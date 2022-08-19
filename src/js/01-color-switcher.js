@@ -15,9 +15,10 @@ startBtn.addEventListener('click', () => {
 });
 
 stopBtn.addEventListener('click', () => {
-    clearInterval(onStartClisk);
     startBtn.disabled = false;
     stopBtn.disabled = true;
+    clearInterval(onStartClisk);
+    
 });
 
 function getRandomHexColor() {
