@@ -2,8 +2,14 @@ const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
 const bodyContainer = document.querySelector('body')
 let onStartClick = null;
- stopBtn.disabled = true;
+stopBtn.disabled = true;
 
+stopBtn.addEventListener('click', () => {
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    clearInterval(onStartClisk);
+    
+});
 
 startBtn.addEventListener('click', () => {
     startBtn.disabled = true;
@@ -12,13 +18,6 @@ startBtn.addEventListener('click', () => {
         bodyContainer.style.backgroundColor = getRandomHexColor()
     }, 1000);
 
-});
-
-stopBtn.addEventListener('click', () => {
-    startBtn.disabled = false;
-    stopBtn.disabled = true;
-    clearInterval(onStartClisk);
-    
 });
 
 function getRandomHexColor() {
