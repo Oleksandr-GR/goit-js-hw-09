@@ -4,11 +4,7 @@ const bodyContainer = document.querySelector('body')
 let onStartClick = null;
 stopBtn.disabled = true;
 
-stopBtn.addEventListener('click', () => {
-    clearInterval(onStartClisk);
-    startBtn.disabled = false;
-    stopBtn.disabled = true;   
-});
+
 
 startBtn.addEventListener('click', () => {
     startBtn.disabled = true;
@@ -16,6 +12,12 @@ startBtn.addEventListener('click', () => {
     onStartClisk = setInterval(() => {
         bodyContainer.style.backgroundColor = getRandomHexColor()
     }, 1000);
+
+    stopBtn.addEventListener('click', () => {
+    clearInterval(onStartClisk);
+    startBtn.disabled = false;
+    stopBtn.disabled = true;   
+});
 
 });
 
