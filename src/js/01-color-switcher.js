@@ -6,13 +6,13 @@ let onStartClick = null;
 
 
 startBtn.addEventListener('click', () => {
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
     onStartClisk = setInterval(() => {
         bodyContainer.style.backgroundColor = getRandomHexColor()
     }, 1000);
-    startBtn.disabled = true;
-    stopBtn.disabled = false;
-});
 
+});
 
 stopBtn.addEventListener('click', () => {
     clearInterval(onStartClisk);
